@@ -212,3 +212,64 @@ footer a {
 footer a:hover {
     color: white;
 }
+
+
+
+@media (max-width:768px) {
+    .navbar {
+        padding: 5px 60px;
+    }
+
+    .banner p {
+        width: 100%;
+    }
+
+    form {
+        align-items: center;
+        width: 90%;
+    }
+
+    footer a {
+        font-size: x-small;
+    }
+
+    footer ul {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width:590px) {
+    .navbar {
+        padding: 5px 20px;
+    }
+
+    .navbar a {
+        font-size: smaller;
+    }
+
+    .banner p {
+        font-size: x-small;
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: large;
+    }
+
+    .lowercase {
+        padding: 0 20px;
+    }
+
+    form {
+        align-items: center;
+        width: 90%;
+    }
+
+    footer a {
+        font-size: xx-small;
+    }
+
+    footer ul {
+        padding: 10px 15px;
+    }
+}

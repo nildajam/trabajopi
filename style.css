@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* navbar */
+nav {
+    padding: 20px;
+}
+
+.navbar {
+    background: rgb(33 37 41);
+    padding: 5px 110px;
+}
+
+.navbar-brand {
+    margin-right: 4px;
+}
+
+.nav-link {
+    color: darkgray;
+    font-size: 16.45px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link:active {
+    color: #fff;
+}
+
+.nav-item>a :first-child {
+    color: #fff;
+}
+
+ul .nav-item:last-child a {
+    color: darkgreen;
+}
+
+.navbar-expand-sm .navbar-collapse {
+    align-items: flex-end;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+/* banner */
+.banner {
+    align-items: self-end;
+    background: #00000078;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 15% 10%;
+    text-align: end;
+}
+
+.banner p {
+    text-align: end;
+    width: 50%;
+}
+
+.banner button {
+    margin-left: 0.6em;
+}
+
+.bannerTitle {
+    font-weight: 600;
+}
+
+
+
+/* titleCards */
+.titleCards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.titleCards div {
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.titleCards h3 {
+    margin-bottom: 8px;
+}
+
+.lowercase {
+    color: rgb(80, 80, 80);
+    font-size: smaller;
+    text-transform: none;
+}
+
+.lowercase a {
+    color: rgb(80, 80, 80);
+    text-decoration-style: dotted;
+}
+
+
+
+/* cards */
+.cards {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+
+.card {
+    border: 1px solid rgb(0 0 0 / 7%);
+}
+
+.card-theme span {
+    border-radius: 4px;
+    font-size: 10.5px;
+    font-weight: bold;
+    margin: 0;
+    padding: 1px 4px;
+}
+
+.card-theme span:last-child {
+    background-color: #259b9b;
+}
+
+.card-text {
+    font-size: 12px;
+    padding-bottom: 12px;
+
+}
+
+
+
+/* aside */
+.card-lugar {
+    color: white;
+    width: 100%;
+}
+
+.background {
+    background: rgb(53, 53, 58);
+}
+
+
+
+/* form */
+.form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+form {
+    align-items: center;
+    width: 50%;
+}
+
+form div {
+    gap: 10px;
+}
+
+form textarea {
+    margin-top: 20px;
+}
+
+form>button {
+    background-color: yellowgreen;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: larger;
+    margin-bottom: 20px;
+    padding: 8px 0;
+    width: 100%;
+}
+
+
+
+/* footer */
+footer ul {
+    align-items: center;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.9682247899159664) 0%, rgb(3, 64, 95) 36%, rgb(2, 74, 102) 100%);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 20px 80px;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer a {
+    color: white;
+    display: table-caption;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}

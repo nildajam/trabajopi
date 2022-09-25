@@ -238,4 +238,12 @@ footer a {
     footer a {
         font-size: 8px;
     }
+
+    footer a:first-child {
+        padding-left: 0 !important;
+    }
+
+    footer a:last-child {
+        padding-right: 0 !important;
+    }
 }

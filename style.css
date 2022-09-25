@@ -5,50 +5,19 @@
 }
 
 
-
 /* navbar */
-nav {
-    padding: 20px;
-}
-
 .navbar {
-    background: rgb(33 37 41);
     padding: 5px 110px;
-}
-
-.navbar-brand {
-    margin-right: 4px;
+    background: rgb(33 37 41);
 }
 
 .nav-link {
     color: darkgray;
-    font-size: 16.45px;
     font-weight: 500;
-    padding: 10px;
-}
-
-.nav-link:hover {
-    color: #fff;
-}
-
-.nav-link:active {
-    color: #fff;
-}
-
-.nav-item>a :first-child {
-    color: #fff;
 }
 
 ul .nav-item:last-child a {
-    color: darkgreen;
-}
-
-.navbar-expand-sm .navbar-collapse {
-    align-items: flex-end;
-    display: flex;
-    flex-basis: auto;
-    flex-direction: column;
-    justify-content: flex-end;
+    color: limegreen;
 }
 
 
@@ -111,16 +80,8 @@ ul .nav-item:last-child a {
 
 
 /* cards */
-.cards {
-    display: flex;
-    gap: 28px;
-    justify-content: center;
-    margin-bottom: 40px;
-
-}
-
-.card {
-    border: 1px solid rgb(0 0 0 / 7%);
+.article-cards {
+    margin: 0 12%;
 }
 
 .card-theme span {
@@ -137,8 +98,6 @@ ul .nav-item:last-child a {
 
 .card-text {
     font-size: 12px;
-    padding-bottom: 12px;
-
 }
 
 
@@ -156,7 +115,7 @@ ul .nav-item:last-child a {
 
 
 /* form */
-.form {
+.formulario {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -189,28 +148,12 @@ form>button {
 
 
 /* footer */
-footer ul {
-    align-items: center;
+footer {
     background: linear-gradient(90deg, rgba(2, 0, 36, 0.9682247899159664) 0%, rgb(3, 64, 95) 36%, rgb(2, 74, 102) 100%);
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 20px 80px;
-}
-
-footer ul li {
-    list-style-type: none;
 }
 
 footer a {
-    color: white;
     display: table-caption;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: white;
 }
 
 
@@ -221,8 +164,8 @@ footer a:hover {
     }
 
     .banner {
-        padding: 20px 60px;
         justify-content: end;
+        padding: 40px 60px;
     }
 
     .banner p {
@@ -237,13 +180,9 @@ footer a:hover {
     footer a {
         font-size: x-small;
     }
-
-    footer ul {
-        padding: 10px 15px;
-    }
 }
 
-@media (max-width:590px) {
+@media (max-width:576px) {
     .navbar {
         padding: 5px 20px;
     }
@@ -258,17 +197,19 @@ footer a:hover {
     }
 
     .banner {
-        padding: 20px 20px;
         justify-content: end;
+        padding: 20px 30px;
     }
 
     .banner h1 {
         font-size: large;
+        margin-bottom: 4px;
     }
 
-    .banner,
+    .banner p,
     .lugar p {
         font-size: x-small;
+        margin-bottom: 4px;
         width: 100%;
     }
 
@@ -278,10 +219,11 @@ footer a:hover {
 
     .lugar h3 {
         font-size: large;
+        margin-bottom: 2px;
     }
 
     .lugar button {
-        font-size: small;
+        font-size: x-small;
     }
 
     .lowercase {
@@ -295,9 +237,5 @@ footer a:hover {
 
     footer a {
         font-size: 8px;
-    }
-
-    footer ul {
-        padding: 10px 15px;
     }
 }

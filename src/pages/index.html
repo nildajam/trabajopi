@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comprar Tickets</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark bg-gradient px-5">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand ps-2" href="#">Conf Bs As</a>
+                <div>
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo2">
+                    <div class="d-flex fw-semibold">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html" target="_blank">La
+                                    conferencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html" target="_blank">Los oradores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html" target="_blank">El lugar y la fecha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/index.html" target="_blank">Conviértete en orador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled " href="#" style="color: yellowgreen;">Comprar
+                                    Tickets</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="min-vh-100">
+            <section class="categoryDiscounts">
+                <div class="d-flex justify-content-center pt-4 pb-2 text-center">
+                    <div class="card-group gap-1 w-50">
+                        <div id="studentCard" class="card border border-primary bg-light bg-opacity-10 rounded-0">
+                            <div class="btn card-body py-3">
+                                <h5 class="card-title">Estudiante</h5>
+                                <p class="my-3">Tienen un descuento</p>
+                                <h6 class="fw-bold">80%</h6>
+                                <div class="card-footer border-0 bg-transparent px-0">
+                                    <small class="text-muted">* presentar documentación</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="traineeCard" class="card border border-success bg-light bg-opacity-10 rounded-0">
+                            <div class="btn card-body py-3">
+                                <h5 class=" card-title">Trainee</h5>
+                                <p class="my-3">Tienen un descuento</p>
+                                <h6 class="fw-bold">50%</h6>
+                                <div class="card-footer border-0 bg-transparent px-0">
+                                    <small class="text-muted">* presentar documentación</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="juniorCard" class="card border border-warning bg-light bg-opacity-10 rounded-0">
+                            <div class="btn card-body py-3">
+                                <h5 class="card-title">Junior</h5>
+                                <p class="my-3">Tienen un descuento</p>
+                                <h6 class="fw-bold">15%</h6>
+                                <div class="card-footer border-0 bg-transparent px-0">
+                                    <small class="text-muted">* presentar documentación</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ticketSales">
+                <div class="d-flex justify-content-center mb-2">
+                    <div class="titleCards text-center text-uppercase">
+                        <div>Venta</div>
+                        <h3>Valor del ticket $200</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form">
+                <div class="d-flex justify-content-center pb-3">
+                    <form name="completeForm" class="w-50">
+                        <div class="row">
+                            <div class="col pe-1">
+                                <input id="name" name="name" type="text" class="form-control" placeholder="Nombre"
+                                    aria-label="Nombre">
+                            </div>
+                            <div class="col ps-1">
+                                <input id="lastName" name="lastName" type="text" class="form-control"
+                                    placeholder="Apellido" aria-label="Apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label"></label>
+                                <input id="email" name="email" type="email" class="form-control" placeholder="Correo">
+                            </div>
+                        </div>
+                        <div class="row pb-3">
+                            <div class="col pe-1">
+                                <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+                                <input id="quantity" name="quantity" type="email" class="numberTickets form-control"
+                                    placeholder="Cantidad">
+                            </div>
+
+                            <div class="col ps-1">
+                                <label for="exampleFormControlInput1" class="form-label">Categoría</label>
+                                <select id="selections" name="category" class="selectedCategory form-select"
+                                    aria-label="Default select example">
+                                    <option selected>Categoría</option>
+                                    <option value="student">Estudiante</option>
+                                    <option value="trainee">Trainee</option>
+                                    <option value="junior">Junior</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="total" name="total"
+                            class="d-flex my-3 p-3 bg-primary bg-opacity-25 border border-2 border-primary border-opacity-10 rounded text-dark text-opacity-75">
+                            <span>Total a Pagar: $</span>
+                            <div class="total ms-1"></div>
+                        </div>
+
+                        <div class="row pt-3">
+                            <div class="col d-grid pe-1">
+                                <button id="cancel" class="btn text-white" style="background: yellowgreen;"
+                                    type="button">Borrar</button>
+                            </div>
+                            <div class="col d-grid ps-1">
+                                <button id="summary" class="btn text-white" style="background: yellowgreen;"
+                                    type="button">Resumen</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </section>
+
+        <section class="footer">
+            <footer>
+                <nav class="navbar px-0"
+                    style="background: linear-gradient(90deg, rgba(2, 0, 36, 0.9682247899159664) 0%, rgb(3, 64, 95) 36%, rgb(2, 74, 102) 100%);">
+                    <div class="container-fluid fw-light justify-content-evenly px-0">
+                        <a class="navbar-brand text-light fs-6 m-0" href="#">Preguntas <br> frecuentes</a>
+                        <a class="navbar-brand text-light fs-6 m-0" href="#">Contáctenos</a>
+                        <a class="navbar-brand text-light fs-6 m-0" href="#">Prensa</a>
+                        <a class="navbar-brand text-light fs-6 m-0" href="#">Conferencias</a>
+                        <a class="navbar-brand text-light fs-6 m-0" href="#">Términos y <br> condiciones</a>
+                        <a class="navbar-brand text-light fs-6 m-0" href="#">Privacidad</a>
+                        <a class="navbar-brand text-light fs-6 m-0" href="#">Estudiantes</a>
+                    </div>
+                </nav>
+            </footer>
+        </section>
+
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+    <script src="functions-frame.js"></script>
+    <script src="functions-buttons.js"></script>
+</body>
+
+</html>

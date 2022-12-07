@@ -121,8 +121,9 @@
                         <div class="row pb-3">
                             <div class="col pe-1">
                                 <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
-                                <input id="quantity" name="quantity" type="email" class="numberTickets form-control"
-                                    placeholder="Cantidad">
+                                <input id="quantity" name="quantity" class="numberTickets form-control"
+                                    placeholder="Cantidad" type="text" min="1"
+                                    oninput="this.value=this.value.replace(/[^0-9]/g,'');">
                             </div>
 
                             <div class="col ps-1">

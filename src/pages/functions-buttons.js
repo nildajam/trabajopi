@@ -13,6 +13,15 @@ function cancel(e) {
   }
 }
 
+function errorValidate(value, placeholder) {
+  value.value === ""
+    ? value.classList.add("border-danger")
+    : value.classList.remove("border-danger");
+  if (placeholder) {
+    value.placeholder = placeholder;
+  }
+}
+
 function checkError() {
   let data = false;
 
@@ -21,24 +30,10 @@ function checkError() {
     (register.category.value === "trainee" && "Trainee") ||
     (register.category.value === "junior" && "Junior");
 
-  register.name.value === ""
-    ? register.name.classList.add("border-danger")
-    : register.name.classList.remove("border-danger");
-  register.name.placeholder = "Ingrese un Nombre";
-
-  register.lastName.value === ""
-    ? register.lastName.classList.add("border-danger")
-    : register.lastName.classList.remove("border-danger");
-  register.lastName.placeholder = "Ingrese un Apellido";
-
-  register.email.value === ""
-    ? register.email.classList.add("border-danger")
-    : register.email.classList.remove("border-danger");
-  register.email.placeholder = "Ingrese un Correo";
-
-  register.quantity.value === ""
-    ? register.quantity.classList.add("border-danger")
-    : register.quantity.classList.remove("border-danger");
+  errorValidate(register.name, "Ingrese un Nombre");
+  errorValidate(register.lastName, "Ingrese un Apellido");
+  errorValidate(register.email, "Ingrese un correo");
+  errorValidate(register.quantity);
 
   !pass
     ? register.category.classList.add("border-danger")
